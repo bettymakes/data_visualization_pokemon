@@ -7,7 +7,7 @@ File.open('pokename.txt', 'w') do |words|
 	pokemon = data.css(".item")
 	pokemon.each do |info|
 		poke_name = info.at_css(".name").text.strip
-		words.write(poke_name + ", ")
+		words.write(poke_name + "\n")
 	end
 
 end
