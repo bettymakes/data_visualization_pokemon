@@ -29,7 +29,7 @@ require 'nokogiri'
 	dragon_poketype_array = Array.new
 	steel_poketype_array = Array.new
 	dark_poketype_array = Array.new
-	# rock_poketype_array = Array.new
+	flying_poketype_array = Array.new
 	# rock_poketype_array = Array.new
 	# rock_poketype_array = Array.new
 
@@ -57,19 +57,26 @@ require 'nokogiri'
 			dragon_poketype_array << type if type == "Dragon"
 			steel_poketype_array << type if type == "Steel"
 			dark_poketype_array << type if type == "Dark"
-
-				
+			flying_poketype_array << type if type == "Flying"
 		end
 
-	# count = poketype_array.length
-	# p count
 
-	# p fire_poketype_array
-	# count = fire_poketype_array.length
-	# p count
+	count_total 		= poketype_array.length
+	count_fire 			= fire_poketype_array.length
+	count_grass 		= grass_poketype_array.length
+	count_rock 			= rock_poketype_array.length
+	count_water 		= water_poketype_array.length
+	count_bug 			= bug_poketype_array.length
+	count_normal 		= normal_poketype_array.length
+	count_poison 		= poison_poketype_array.length
+	count_electric 	= electric_poketype_array.length
+	count_ground 		= ground_poketype_array.length
+	count_fighting 	= fighting_poketype_array.length
+	count_pychic 		= psychic_poketype_array.length
+	count_ghost 		= ghost_poketype_array.length
+	count_ice 			= ice_poketype_array.length
+	count_dragon 		= dragon_poketype_array.length
+	count_steel 		= steel_poketype_array.length
+	count_dark 			= dark_poketype_array.length
+	count_flying 		= flying_poketype_array.length
 
-	# count2 = grass_poketype_array.length
-	# p count2
-
-	# count3 = rock_poketype_array.length
-	# p count3
