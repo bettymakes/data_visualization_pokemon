@@ -11,7 +11,7 @@ html, body{
 }
 
 h1{
-	font: #444;
+	color: #444;
 	font-size: 52px;
 	font-weight: normal;
 	text-align: center;
@@ -55,7 +55,7 @@ inline takes higher precidents than css styling, in order to overried, you have 
 }
 
 .bar_filled_highlight{
-	background-color: red;
+	background-color: #505355;
 	position: absolute;
 	bottom: 0px;
 	width: 100%;
