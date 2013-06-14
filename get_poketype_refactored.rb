@@ -40,10 +40,9 @@ require 'nokogiri'
 			div_height = ((value.to_f / poketype_total.to_f)*100)
 			
 			html.write("<div class='bar_default'>\n")
-			html.write("	<div class='bar_filled_highlight' style='height: " + div_height.to_s + "%;'>\n")
-										#<div class="bar-filled highlight" style="height: 100%"></div>
 			html.write("	<div class='bar_title'>" + key.upcase.to_s + "</div>\n")
-			html.write("	</div>\n")
+			html.write("	<div class='bar_filled_highlight' style='height: " + div_height.to_s + "%;'></div>\n")
+										#<div class="bar-filled highlight" style="height: 100%"></div>
 			html.write("</div>\n")
 			html.write("\n")
 	end
