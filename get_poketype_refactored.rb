@@ -1,7 +1,7 @@
 require 'nokogiri'
 	file = 'pokemon-list.html'  #downloaded site to file, scraping downloaded file instead
 	data = Nokogiri::HTML(open( file ))
-	File.open('poke_page2.html', 'w') do |html|
+	File.open('poke_page.html', 'w') do |html|
 
 	pokemon = data.css(".item")
 
@@ -41,8 +41,8 @@ require 'nokogiri'
 			
 			p div_width
 			html.write("<div class='bar_default'>\n")
-			html.write("	<div class='bar_filled_highlight' style='width: " + div_width.to_s + "%;'>\n")
-										#<div class="bar-filled highlight" style="width: 100%"></div>
+			html.write("	<div class='bar_filled_highlight' style='height: " + div_width.to_s + "%;'>\n")
+										#<div class="bar-filled highlight" style="height: 100%"></div>
 			html.write("	<div class='bar_title'>" + key.upcase.to_s + "</div>\n")
 			html.write("	</div>\n")
 			html.write("</div>\n")
