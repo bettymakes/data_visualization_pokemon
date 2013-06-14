@@ -7,18 +7,20 @@ html, body{
 
 
 #page_title{
-	/*margin: 50px auto;*/
+	width: 100%;
 }
 
 h1{
 	font: #444;
 	font-size: 52px;
+	font-weight: normal;
+	text-align: center;
 
 }
 
 .container{
 	width: 100%;
-	height: 75%;
+	height: 60%;
 	margin-top: 50px;
 	border: 4px solid #eee;
 	border-left: none;
@@ -83,7 +85,6 @@ inline takes higher precidents than css styling, in order to overried, you have 
 	opacity: 0;
 	z-index: 3;
 	transition: opacity .5s ease;
-	background-color: black;
 	width: 100%;
 	font-size: 18px;
 }
