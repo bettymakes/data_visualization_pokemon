@@ -1,7 +1,7 @@
 require 'nokogiri'
 	file = 'pokemon-list.html'  #downloaded site to file, scraping downloaded file instead
 	data = Nokogiri::HTML(open( file ))
-	File.open('poke_page.html', 'w') do |html|
+	File.open('poke_page2.html', 'w') do |html|
 
 	pokemon = data.css(".item")
 
